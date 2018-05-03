@@ -9,7 +9,7 @@ import {ContactsService} from '../contacts.service';
 })
 export class EntryListComponent implements OnInit {
   contactList: Array <any>;
-  constructor(private contacts: ContactsService) { }
+  constructor(private contacts: ContactsService) {}
   ngOnInit() {
     this.getAllContacts();
   }

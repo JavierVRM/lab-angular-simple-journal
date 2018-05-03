@@ -2,5 +2,9 @@
   <div class="inner" *ngFor= 'let c of contactList'>
     <h2>{{c.title}}</h2>
     <h3>{{c.date}}</h3>
+    <a [routerLink]='["../home",c._id]'><button>Check it</button></a>
   </div>
+</div>
+<div class="create__container">
+  <app-entry-form></app-entry-form>
 </div>
